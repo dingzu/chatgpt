@@ -37,7 +37,7 @@ export const post: APIRoute = async context => {
     },
     method: "POST",
     body: JSON.stringify({
-      model: "GPT-4-0613",
+      model: "gpt-4",
       messages,
       temperature,
       stream: true

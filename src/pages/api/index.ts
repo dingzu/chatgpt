@@ -27,7 +27,7 @@ export const post: APIRoute = async ({ request }) => {
     },
     body: JSON.stringify({
       // model: "gpt-3.5-turbo",
-      model: "gpt-4",
+      model: "GPT-4-0613",
       messages: [
         {
           role: "user",

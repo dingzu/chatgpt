@@ -1,12 +1,14 @@
 export const defaultSetting = {
-  continuousDialogue: true,
-  archiveSession: false,
+  continuousDialogue: false,
+  archiveSession: true,
   openaiAPIKey: "",
   openaiAPITemperature: 60,
   systemRule: ""
 }
 
 export const defaultMessage = `
-- 本站仅用于演示，填入自己的 key 才可使用。
-- 本站功能强大，响应速度快，欢迎自部署。
-- <kbd>Shift</kbd> + <kbd>Enter</kbd> 换行。开头输入 <kbd>/</kbd> 或者 <kbd>空格</kbd> 搜索 Prompt 预设。点击输入框滚动到底部。`
+  - 由 D\\Z 代理的 CHAT-GPT4 版本
+  - 训练数据截止到 2021 年 9 月
+  - 由于 GPT4 的 Token 消耗量过大，已默认关闭连续对话，如有需要，在设置中自行打开
+`
+

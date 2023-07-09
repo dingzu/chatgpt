@@ -40,8 +40,8 @@ export default function () {
     createResizeObserver(containerRef, ({ width, height }, el) => {
       if (el === containerRef) setContainerWidth(`${width}px`)
     })
-    const storage = localStorage.getItem("setting")
-    const session = localStorage.getItem("session")
+    const storage = localStorage.getItem("setting-new")
+    const session = localStorage.getItem("session-new")
     try {
       let archiveSession = false
       if (storage) {
@@ -75,9 +75,9 @@ export default function () {
     ) {
       setMessageList(messageList().slice(1))
     }
-    localStorage.setItem("setting", JSON.stringify(setting()))
+    localStorage.setItem("setting-new", JSON.stringify(setting()))
     if (setting().archiveSession)
-      localStorage.setItem("session", JSON.stringify(messageList()))
+      localStorage.setItem("session-new", JSON.stringify(messageList()))
   })
 
   createEffect(() => {

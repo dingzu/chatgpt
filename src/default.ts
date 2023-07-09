@@ -7,8 +7,8 @@ export const defaultSetting = {
 }
 
 export const defaultMessage = `
-  - 由 DZ 代理的 CHAT-GPT4 版本
-  - 训练数据截止到 2021 年 9 月
-  - 由于 GPT4 的 Token 消耗量过大，已默认关闭连续对话，如有需要，在设置中自行打开
+  - 由 DZ 代理的 CHAT-GPT3.5 版本
+  - 由于 GPT4 的 Token 消耗量确实过大，模型已退回到 3.5，如果有人需要用 4 单找我吧
+  - 默认关闭了连续对话，可以自己在设置里面打开
 `
 
